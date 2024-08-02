@@ -12,7 +12,7 @@
     <body>
         <div class="jumbotron">
             <div class="container-fluid">
-                <h1>Find the Distance Betwen Two Locations:</h1>
+                <h1>Find the Distance Between Two Locations:</h1>
                 <p>This application will help you calculate your distances!</p>
                 <form class="form-horizontal">
                     <div class="form-group row">
@@ -21,7 +21,6 @@
                             <input type="text" id="from" placeholder="Origin" class="form-control">
                         </div>
                     </div>
-
                     <div class="form-group row">
                         <label for="to" class="col-xs-2 col-form-label"><i class="fas fa-map-marker-alt"></i></label>
                         <div class="col-xs-4">
@@ -30,23 +29,14 @@
                     </div>
                 </form>
                 <div class="offset-xs-2 col-xs-10">
-                    <button class="btn btn-info btn-lg"><i class="fas fa-location-arrow"></i></button>
+                    <button class="btn btn-info btn-lg" onclick="calculateDistance()"><i class="fas fa-location-arrow"></i></button>
                 </div>
             </div>
             <div class="container-fluid">
-                <div id="googleMap">
-
-                </div>
-                <div id="output">
-
-                </div>
+                <div id="googleMap"></div>
+                <div id="output"></div>
             </div>
-
         </div>
-
-
-
-
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALPLc8gr9SlTQBe9Y1V_dA92e6W95QwmQ&libraries=places"></script>
         <script src="app.js"></script>
     </body>
